@@ -1,0 +1,63 @@
+/* app.css */
+html, body{
+  background: linear-gradient(to bottom, #000000 0%, #160516 40%, #0e000e 100%);
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 100px;
+
+}
+
+.danger-btn {
+  width: 180px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to top, #73200d 0%, #ff2f00 50%, #6f1400 100%);
+  color: #ffffff;
+  border: 3px solid #81584b;
+  padding: 20px 40px;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 12px #7c3200;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exploded {
+  background:#ff0000;
+  height: 100vh;
+}
+
+.danger-btn:hover {
+  background: #f82c2c;
+  color: #000000;
+  box-shadow: 0 12px #660000;
+  transform: translateY(-3px);
+}
+
+.danger-btn:active {
+  box-shadow: 0 2px #660000;
+  transform: translateY(-8px);
+  background-color: #990000;
+}
+
+.count-text {
+  color: #ff0000;
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+.title-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(191, 30, 191);
+}

@@ -25,11 +25,21 @@ btn.addEventListener("click", function() {
 
       setTimeout(function() {
         sound.currentTime = 0;
-        sound.play();
-        alert("爆発しました！！");
-        document.body.classList.remove("exploded");
-        btn.disabled = false;
+        const playPromise = sound.play();
+
+        if (playPromise !== undefined) {
+          playPromise.then(function() {
+            alert("爆発しました！！");
+          }).catch(function(e) {
+            console.warn("音声再生に失敗しました", error);
+          });
+        } else {
+          alert("爆発しました！！");
+        }
       }, 100);
+
+      document.body.classList.remove("exploded");
+      btn.disable = false;
     }
   }, 1000);
 });

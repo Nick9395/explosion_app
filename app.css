@@ -1,9 +1,10 @@
 /* app.css */
-html, body{
-  background: linear-gradient(to bottom, #000000 0%, #160516 40%, #0e000e 100%);
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
+body{
+  background-color: #060012;
+}
+
+.exploded {
+  background:#ff0000;
 }
 
 .container {
@@ -13,35 +14,29 @@ html, body{
   align-items: center;
   height: 100%;
   flex-direction: column;
-  padding-top: 100px;
-
+  padding-top: 120px;
 }
 
 .danger-btn {
-  width: 180px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(to top, #73200d 0%, #ff2f00 50%, #6f1400 100%);
-  color: #ffffff;
-  border: 3px solid #81584b;
+  color: #ddd6d6;
+  border: 3px solid #d7bab2;
   padding: 20px 40px;
-  font-size: 28px;
+  font-size: 60px;
   font-weight: bold;
-  box-shadow: 0 12px #7c3200;
+  box-shadow: 0 20px #2b1e16;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.exploded {
-  background:#ff0000;
-  height: 100vh;
-}
-
 .danger-btn:hover {
-  background: #f82c2c;
+  background: #f61a1a;
   color: #000000;
-  box-shadow: 0 12px #660000;
-  transform: translateY(-3px);
+  border: 3px solid #bb7e0c;
+  box-shadow: 0 20px #530707;
 }
 
 .danger-btn:active {
@@ -53,11 +48,11 @@ html, body{
 .count-text {
   color: #ff0000;
   padding-top: 40px;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .title-text {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
-  color: rgb(191, 30, 191);
+  color: rgb(174, 14, 174);
 }

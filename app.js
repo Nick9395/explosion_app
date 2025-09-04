@@ -35,7 +35,7 @@ btn.addEventListener("click", function() {
 
           }).catch(function(e) {
             console.warn("音声再生に失敗しました", e);
-            alert("爆発しました！！（音は鳴りませんでした）");
+            alert("爆発しました！！");
             document.body.classList.remove("exploded");
             btn.disabled = false; // エラー時もボタンを有効にする
           });
